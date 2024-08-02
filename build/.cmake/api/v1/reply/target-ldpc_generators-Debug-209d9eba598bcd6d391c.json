@@ -1,0 +1,81 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 2461,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "bnProc_gen_128_files::@4ef31c399ecc8892b4ab"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "bnProc_gen_avx2_files::@4ef31c399ecc8892b4ab"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "bnProc_gen_avx512_files::@d4a47607d13e1d7bec72"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cnProc_gen_128_files::@03632ed0169b681749fb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cnProc_gen_avx2_files::@03632ed0169b681749fb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cnProc_gen_avx512_files::@7db5bc349108e330c0b7"
+		}
+	],
+	"id" : "ldpc_generators::@6890427a1f51a3e7e1df",
+	"name" : "ldpc_generators",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
