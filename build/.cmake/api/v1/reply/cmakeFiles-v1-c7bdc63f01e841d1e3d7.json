@@ -1,0 +1,374 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "cmake_targets/macros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindGit.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "nfapi/CMakeLists.txt"
+		},
+		{
+			"path" : "nfapi/oai_integration/aerial/CMakeLists.txt"
+		},
+		{
+			"path" : "cmake_targets/tools/Kbuild.cmake"
+		},
+		{
+			"path" : "cmake_targets/tools/Kbuild.cmake"
+		},
+		{
+			"path" : "cmake_targets/tools/Kbuild.cmake"
+		},
+		{
+			"path" : "openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/generator_bnProc/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/generator_bnProc_avx512/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/generator_cnProc/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/PHY/CODING/nrLDPC_decoder/nrLDPC_tools/generator_cnProc_avx512/CMakeLists.txt"
+		},
+		{
+			"path" : "common/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/alg/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/ds/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/T/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/T/tracer/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/T/tracer/filter/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/T/tracer/logger/CMakeLists.txt"
+		},
+		{
+			"path" : "common/utils/T/tracer/view/CMakeLists.txt"
+		},
+		{
+			"path" : "doc/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/CMakeLists.txt"
+		},
+		{
+			"path" : "openair1/PHY/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/E1AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/E1AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/E1AP/MESSAGES/ASN.1/38463-g80.R16.78.0.cmake"
+		},
+		{
+			"path" : "openair2/F1AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/F1AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/F1AP/MESSAGES/ASN1/f1ap-16.3.1.cmake"
+		},
+		{
+			"path" : "openair2/LAYER2/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/LAYER2/nr_rlc/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/M2AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/M2AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/M2AP/MESSAGES/ASN1/m2ap-14.0.0.cmake"
+		},
+		{
+			"path" : "openair2/X2AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/X2AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/X2AP/MESSAGES/ASN1/R15/x2ap-15.6.0.cmake"
+		},
+		{
+			"path" : "openair2/RRC/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/RRC/LTE/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/RRC/LTE/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/RRC/LTE/MESSAGES/ASN.1/lte-rrc-16.13.0.cmake"
+		},
+		{
+			"path" : "openair2/RRC/NR/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/RRC/NR/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/RRC/NR/MESSAGES/ASN.1/nr-rrc-17.3.0.cmake"
+		},
+		{
+			"path" : "openair2/XNAP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/XNAP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair2/XNAP/MESSAGES/ASN1/xnap_R16.2.0.cmake"
+		},
+		{
+			"path" : "openair3/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/LPP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/LPP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/LPP/MESSAGES/ASN1/37355-g60.cmake"
+		},
+		{
+			"path" : "openair3/M3AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/M3AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/M3AP/MESSAGES/ASN1/m3ap-14.0.0.cmake"
+		},
+		{
+			"path" : "openair3/S1AP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/S1AP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/S1AP/MESSAGES/ASN1/R15/s1ap-15.6.0.cmake"
+		},
+		{
+			"path" : "openair3/NGAP/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/NGAP/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/NGAP/MESSAGES/ASN1/ngap-15.8.0.cmake"
+		},
+		{
+			"path" : "openair3/NRPPA/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/NRPPA/MESSAGES/CMakeLists.txt"
+		},
+		{
+			"path" : "openair3/NRPPA/MESSAGES/ASN1/38455.cmake"
+		},
+		{
+			"path" : "radio/CMakeLists.txt"
+		},
+		{
+			"path" : "radio/rfsimulator/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/or/DSI_test/openairinterface5g/build",
+		"source" : "/home/or/DSI_test/openairinterface5g"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
