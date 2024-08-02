@@ -3234,6 +3234,11 @@ uint16_t nr_dci_size(const NR_UE_DL_BWP_t *DL_BWP,
     case NR_UL_DCI_FORMAT_0_1:
       /// fixed: Format identifier 1, MCS 5, NDI 1, RV 2, HARQ PID 4, PUSCH TPC 2, ULSCH indicator 1 --16
       size += 16;
+
+      // mwnl or
+      // The size of the DSI format is 56 bits. If you want to change DSI size, modify here.
+      size += 17;
+      
       // Carrier indicator
       if (sc_info->crossCarrierSchedulingConfig) {
         dci_pdu->carrier_indicator.nbits = 3;

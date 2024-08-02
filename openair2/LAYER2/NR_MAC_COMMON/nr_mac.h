@@ -359,6 +359,13 @@ typedef struct {
   dci_field_t dmrs_sequence_initialization;
   dci_field_t reserved; //1_0/C-RNTI:10 bits, 1_0/P-RNTI: 6 bits, 1_0/SI-&RA-RNTI: 16 bits
 
+  // mwnl or
+  // These new parameters are added for the DSI format.
+  uint8_t fiveQI;
+  uint8_t buffer_size;
+
+  uint16_t DSI_dedicated;
+
 } dci_pdu_rel15_t;
 
 //  38.321 ch6.2.1, 38.331

@@ -1228,7 +1228,7 @@ bool nr_update_bsr(NR_UE_MAC_INST_t *mac, frame_t frameP, slot_t slotP, uint8_t 
 
     if (rlc_status.bytes_in_buffer > 0) {
       LOG_D(NR_MAC,
-            "[UE %d] PDCCH Tick : LCID%d LCGID%d has data to transmit =%d bytes at frame %d slot %d\n",
+            "[UE %d] LCID%d LCGID%d has data to transmit =%d bytes at %d.%d\n",
             mac->ue_id,
             lcid,
             lcgid,
@@ -1242,6 +1242,8 @@ bool nr_update_bsr(NR_UE_MAC_INST_t *mac, frame_t frameP, slot_t slotP, uint8_t 
         num_lcid_with_data ++;
         // sum lcid buffer which has same lcgid
         mac->scheduling_info.lcg_sched_info[lcgid].BSR_bytes += rlc_status.bytes_in_buffer;
+        // printf("lcgid=%d mac->scheduling_info.lcg_sched_info[lcgid].BSR_bytes=%d \n",lcgid,mac->scheduling_info.lcg_sched_info[lcgid].BSR_bytes);
+        // mwl or
         //Fill in the array
         array_index = 0;
 
@@ -2676,10 +2678,13 @@ static void nr_ue_get_sdu_mac_ce_post(NR_UE_MAC_INST_t *mac,
   int lcg_id_bsr_trunc = 0;
   for (lcg_id = 0; lcg_id < NR_MAX_NUM_LCGID; lcg_id++) {
     if (mac_ce_p->bsr_ce_len == sizeof(NR_BSR_SHORT)) {
+      // mwnl or
+      // The UE gen. BSR.
       mac->scheduling_info.lcg_sched_info[lcg_id].BSR =
           nr_locate_BsrIndexByBufferSize(NR_SHORT_BSR_TABLE,
                                          NR_SHORT_BSR_TABLE_SIZE,
                                          mac->scheduling_info.lcg_sched_info[lcg_id].BSR_bytes);
+      // printf(" lcg_id=%d,BSR_bytes=%d \n",lcg_id,mac->scheduling_info.lcg_sched_info[lcg_id].BSR_bytes);
     } else {
       mac->scheduling_info.lcg_sched_info[lcg_id].BSR =
           nr_locate_BsrIndexByBufferSize(NR_LONG_BSR_TABLE,
@@ -2792,14 +2797,15 @@ static void nr_ue_get_sdu_mac_ce_post(NR_UE_MAC_INST_t *mac,
       mac_ce_p->bsr_t = NULL;
       mac_ce_p->bsr_s->LcgID = lcg_id_bsr_trunc;
       mac_ce_p->bsr_s->Buffer_size = mac->scheduling_info.lcg_sched_info[lcg_id_bsr_trunc].BSR;
-      LOG_D(NR_MAC,
-            "[UE %d] Frame %d subframe %d BSR Trig=%d report SHORT BSR with level %d for LCGID %d\n",
-            mac->ue_id,
-            frameP,
-            subframe,
-            mac->BSR_reporting_active,
-            mac->scheduling_info.lcg_sched_info[lcg_id_bsr_trunc].BSR,
-            lcg_id_bsr_trunc);
+      if(mac->scheduling_info.lcg_sched_info[lcg_id_bsr_trunc].BSR>0)
+        LOG_I(NR_MAC,
+              "[UE %d] Frame %d subframe %d BSR Trig=%d report SHORT BSR with level %d for LCGID %d\n",
+              mac->ue_id,
+              frameP,
+              subframe,
+              mac->BSR_reporting_active,
+              mac->scheduling_info.lcg_sched_info[lcg_id_bsr_trunc].BSR,
+              lcg_id_bsr_trunc);
     }
   }
 
@@ -2809,12 +2815,6 @@ static void nr_ue_get_sdu_mac_ce_post(NR_UE_MAC_INST_t *mac,
 
   /* Actions when a BSR is sent */
   if (mac_ce_p->bsr_ce_len) {
-    LOG_D(NR_MAC,
-          "[UE %d] MAC BSR Sent !! bsr (ce%d,hdr%d) buff_len %d\n",
-          mac->ue_id,
-          mac_ce_p->bsr_ce_len,
-          mac_ce_p->bsr_header_len,
-          buflen);
     // Reset ReTx BSR Timer
     mac->scheduling_info.retxBSR_SF = nr_get_sf_retxBSRTimer(mac->scheduling_info.retxBSR_Timer);
     LOG_D(NR_MAC, "[UE %d] MAC ReTx BSR Timer Reset =%d\n", mac->ue_id, mac->scheduling_info.retxBSR_SF);
@@ -3032,13 +3032,7 @@ static bool fill_mac_sdu(NR_UE_MAC_INST_t *mac,
   NR_LCG_SCHEDULING_INFO *lcg_info = &sched_info->lcg_sched_info[0];
   lc_info->LCID_buffer_remain -= sdu_length;
   (lcg_info + lc_info->LCGID)->BSR_bytes -= sdu_length;
-  LOG_D(NR_MAC,
-        "[UE %d] Update BSR [%d.%d] BSR_bytes for LCG%ld = %d\n",
-        mac->ue_id,
-        frameP,
-        subframe,
-        lc_info->LCGID,
-        (lcg_info + lc_info->LCGID)->BSR_bytes);
+
   if ((lcg_info + lc_info->LCGID)->BSR_bytes < 0)
     (lcg_info + lc_info->LCGID)->BSR_bytes = 0;
 
