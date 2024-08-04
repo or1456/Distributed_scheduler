@@ -71,3 +71,6 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ue-fo-comp
 
 3. The DSI MCS is sometimes 6 and sometimes 9.
   - Change the position of the USRP B210.
+
+## Modify
+Search for `mwnl or`, and you can see what I have modified.
