@@ -29,8 +29,9 @@ mv Distributed_scheduler ./openairinterface5g
 ```
 ### Build ONLY FOR the FIRST time
 ```
+cd openairinterface5g/
 source oaienv
-cd cmake_targets
+cd cmake_targets/
 export BUILD_UHD_FROM_SOURCE=Ture
 export UHD_VERSION=4.3.0.0-rc1 #(optional UHD_VERSION=4.4.0.0)
 ./build_oai -I
