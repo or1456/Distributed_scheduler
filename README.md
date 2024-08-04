@@ -35,18 +35,20 @@ cd cmake_targets/
 export BUILD_UHD_FROM_SOURCE=Ture
 export UHD_VERSION=4.3.0.0-rc1 #(optional UHD_VERSION=4.4.0.0)
 ./build_oai -I
-cd ran_build/build
 ```
 ### Build gNB
 ```
-../../build_oai -w USRP --gNB
+./build_oai -w USRP --gNB
 ```
 ### Build UE1 and UE2
 ```
-../../build_oai -w USRP --nrUE
+./build_oai -w USRP --nrUE
 ```
 
 ## Run Distributed Scheduler gNB and UE
+```
+cd ran_build/build
+```
 ### Run gNB
 ```
 sudo ./nr-softmodem -O ~/openairinterface5g/targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --sa -E --gNBs.[0].min_rxtxtime 6 -continuous-tx
