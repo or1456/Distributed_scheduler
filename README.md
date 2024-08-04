@@ -4,11 +4,7 @@ Based on: https://hackmd.io/RGkrr1bKSvimHDrXb-ulHQ
 
 ## Build Distributed Scheduler gNB and UE
 
-### Clone and build the dependency for the **first time**
-Change directory name.
-```
-mv Distributed_scheduler ./openairinterface5g
-```
+
 ### Clone Distributed Scheduler project 
 gNB .32
 ```
@@ -27,6 +23,10 @@ UE2 .31
 git clone https://github.com/or1456/Distributed_scheduler.git -b UE2
 ```
 
+### Change directory name
+```
+mv Distributed_scheduler ./openairinterface5g
+```
 ### Build ONLY FOR the FIRST time
 ```
 source oaienv
