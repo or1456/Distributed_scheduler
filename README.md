@@ -66,7 +66,7 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ue-fo-comp
   - Reboot.
   - Replug the USRP B210.
 
-2. gNB terminal print a lot of "LLLLLLLLLLLLLLLLLL"
+2. The gNB terminal prints a lot of "LLLLLLLLLLLLLLLLLL"
   - Some processes use all of CPU resources, so kill these processes.
 
 3. The DSI MCS is sometimes 6 and sometimes 9.
